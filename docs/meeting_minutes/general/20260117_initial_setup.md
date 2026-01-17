@@ -14,7 +14,7 @@
 
 ## 3. 합의된 결정 사항
 1. **저장소 초기화**: 
-   - Root: `/Users/bbagsang-u/workspace/remote-antigravity`
+   - Root: 프로젝트 루트 디렉터리
    - Git 초기화 및 `develop` 브랜치 생성, 보호 정책 적용 스크립트(`init_repo.sh`) 실행.
 2. **AI Rules 우선순위 설정**:
    - `ai-rules/index.md`를 프로젝트 관리의 최상위 기준 문서로 설정.
