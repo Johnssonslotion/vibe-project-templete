@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
+### Fixed
+- [AI-Rules v1.8.1] Implemented Dual-Location Workflow Strategy ([AI-규칙 v1.8.1] 워크플로우 이중 위치 동기화 전략 도입)
+  - Workflows are now managed in `ai-rules/workflows/` and auto-deployed to `.agent/workflows/` for functionality ([거버넌스는 ai-rules에서, 기능은 .agent에서 수행하도록 동기화])
+  - Updated `init_repo.sh` and pre-commit hook to automate mirrored deployment ([init_repo.sh 및 훅을 통한 자동 배포 시스템 구축])
+
 ### Changed
 - [AI-Rules v1.8.0] Enhanced Workflow Governance and README integration ([AI-규칙 v1.8.0] 워크플로우 거버넌스 강화 및 README 통합)
   - Relocated workflows from `.agent/workflows/` to `ai-rules/workflows/` ([워크플로우를 ai-rules/workflows/로 이동하여 관리 투명성 확보])

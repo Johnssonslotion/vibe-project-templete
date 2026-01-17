@@ -5,6 +5,18 @@
 
 ---
 
+## [v1.8.1] - 2026-01-17
+**변경 주체**: 워크플로우 이중 위치 전략 (Dual-Location Sync)  
+**승인자**: 사용자  
+**회의록**: - (긴급 수정 반영)
+
+### 변경 내용
+- 워크플로우 동기화 자동화: `ai-rules/workflows/` (Source) -> `.agent/workflows/` (Deployment)
+- `init_repo.sh` 및 pre-commit 훅 내 동기화 로직 추가
+- `manage-workflows.md` 내 배포 지침 추가
+
+---
+
 ## [v1.8.0] - 2026-01-17
 **변경 주체**: 워크플로우 거버넌스 및 README 통합  
 **승인자**: 사용자  
@@ -38,6 +50,7 @@
 
 | 날짜 | 문서명 | 버전 | 변경 요약 | 관련 링크 |
 |:---|:---|:---|:---|:---|
+| 2026-01-17 | [init_repo.sh](init_repo.sh) | v1.1.0 | 워크플로우 자동 동기화 로직 추가 | [v1.8.1](#v1.8.1---2026-01-17) |
 | 2026-01-17 | [README.md](README.md) | v1.8.0 | 워크플로우 가시성 강화 및 요약표 추가 | [v1.8.0](ai-rules/meeting_minutes/workflows/20260117_workflows_v1.8.0.md) |
 | 2026-01-17 | [workflows/](ai-rules/workflows/) | v1.1.0 | 워크플로우 위치 이동 및 거버넌스 체계 구축 | [v1.8.0](ai-rules/meeting_minutes/workflows/20260117_workflows_v1.8.0.md) |
 | 2026-01-17 | [ai-rules.md](.agent/rules/ai-rules.md) | v1.7.0 | 워크플로우 모듈화 및 문서 전문가 페르소나 추가 | [v1.7.0](ai-rules/meeting_minutes/workflows/20260117_workflows_v1.7.0.md) |
