@@ -13,9 +13,12 @@ ai-rules/
 ├── HISTORY.md          # 변경 이력 인덱스
 ├── changes/            # 상세 변경 문서
 ├── meeting_minutes/    # AI-Rules 전용 회의록
-├── tasks/              # 작업별 가이드라인
+│   ├── rules/          # 규칙 및 원칙 관련 합의 (v1.5.0 이하 등)
+│   └── workflows/      # 실행 워크플로우 관련 합의 (v1.6.0 이상 등)
+├── tasks/              # 작업별 가이드라인 (개발, 연구 등)
 │   ├── development.md  # 개발 워크플로우 규칙
 │   └── research.md     # 연구 워크플로우 규칙
+├── workflows/          # 거버넌스 워크플로우 (모듈화)
 └── archives/           # 폐기된 규칙 보관
 ```
 
@@ -34,12 +37,13 @@ AI 에이전트는 규칙 충돌 시 다음 우선순위를 따릅니다:
 ### 3.2 변경 절차 (Strict Mode + Persona Review)
 1. **제안**: 이슈 또는 회의에서 규칙 변경 제안.
 2. **페르소나 검토**: 
-   - 10년차+ 베테랑 페르소나 4명 이상 참여 (개발자, 연구원, 아키텍트, PM)
+   - **페르소나 5명 참여** (개발자, 연구원, 아키텍트, PM, **문서 전문가**)
    - **교차 토론 3회** 진행 (독립 의견 → 반박/보완 → 최종 입장)
    - PM이 모든 의견을 종합하여 **최종 권고안** 작성
    - 상세 프로세스: [personas.md](personas.md) 참조
 3. **회의록 작성**: 
-   - `ai-rules/meeting_minutes/YYYYMMDD_topic.md` 에 합의 내용 기록
+   - **규칙 변경 시**: `ai-rules/meeting_minutes/rules/YYYYMMDD_topic.md`
+   - **워크플로우 변경 시**: `ai-rules/meeting_minutes/workflows/YYYYMMDD_topic.md`
    - "합의된 변경" 섹션 및 페르소나 토론 요약 포함
 4. **반영**: 
    - 규칙 파일 수정 (PR 제출)

@@ -53,6 +53,8 @@
 - **가역성 보장**: 모든 변경은 롤백(`Down`) 계획을 포함해야 하며, 스테이징 환경에서의 검증이 선행되어야 한다.
 - 상세 규칙은 `ai-rules/tasks/database.md`를 따른다.
 
+**최종 업데이트**: 2026-01-17 v1.8.0 (워크플로우 거버넌스 강화 및 문서 전문가 검토 체계 수립)
+
 ## 11. Mock-to-Real Development (개발 아웃라인)
 - **Interface-Driven**: 상용 수준의 견고함을 위해 모든 통신은 인터페이스 우선 정의와 수동 Mocking으로 시작한다.
 - **Phase-based Evolution**: Mock-First에서 Real-Flow로 전환하는 4단계 아웃라인을 준수하며, 각 단계별 실패(Failure) 시나리오 검증을 필수화한다.
