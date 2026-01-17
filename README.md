@@ -11,7 +11,7 @@ AI 에이전트와 협업하며, 페르소나 기반 검토 프로세스를 통�
 
 ### 1. AI Rules 관리 시스템
 - **핵심 원칙**: Document-First, Explicit Approval, Version Control, Korean Language
-- **페르소나 기반 검토**: 10년차+ 베테랑 4명 (개발자, 연구원, 아키텍트, PM)
+- **페르소나 기반 검토**: 10년차+ 베테랑 **5명** (개발자, 연구원, 아키텍트, PM, **문서 전문가**)
 - **3라운드 교차 토론**: 독립 의견 → 반박/보완 → 최종 입장
 - **변경 이력 관리**: `ai-rules/HISTORY.md` + `ai-rules/changes/`
 
@@ -21,7 +21,7 @@ AI 에이전트와 협업하며, 페르소나 기반 검토 프로세스를 통�
 - **Git 기반 형상 관리**: 모든 변경 사항 추적 가능
 
 ### 3. 워크플로우 자동화
-- `/update-ai-rules`: AI-rules 변경 프로세스 자동화
+- **거버넌스 워크플로우**: `ai-rules/workflows/` 내 작업별 모듈화된 프로세스 제공
 - `init_repo.sh`: 저장소 초기화 및 보호 브랜치 설정
 - Pre-commit 훅: `.agent/rules/ai-rules.md` 자동 동기화
 
@@ -36,17 +36,20 @@ vibe-project-template/
 │   ├── HISTORY.md         # 변경 이력 인덱스
 │   ├── changes/           # 상세 변경 문서
 │   ├── meeting_minutes/   # AI-rules 전용 회의록
-│   └── tasks/             # 작업별 가이드라인
+│   ├── tasks/             # 작업별 가이드라인
+│   └── workflows/         # 거버넌스 워크플로우 (모듈화)
+│       ├── HISTORY.md     # 워크플로우 변경 이력
+│       ├── manage-workflows.md # 워크플로우 관리 (Meta)
+│       └── update-ai-rules.md  # AI Rules 업데이트
 ├── docs/
-│   └── meeting_minutes/   # 일반 프로젝트 회의록
+│   ├── meeting_minutes/   # 일반 프로젝트 회의록
+│   └── HISTORY.md         # 전체 문서 마스터 히스토리
 ├── .agent/
-│   ├── rules/
-│   │   └── ai-rules.md    # LLM 최적화 버전 (12000자 이하)
-│   └── workflows/
-│       └── update-ai-rules.md
+│   └── rules/
+│       └── ai-rules.md    # LLM 최적화 버전 (12000자 이하)
 ├── CHANGELOG.md           # 프로젝트 변경 이력 (영어 + 한글)
 ├── change_history_guide.md # 변경 관리 프로세스
-└── init_repo.sh           # 저장소 초기화 스크립트
+└── init_repo.sh           # 저장소 초기화 스크립스
 ```
 
 ## 사용 방법
@@ -76,7 +79,22 @@ cat ai-rules/core_principles.md
 
 ### 3. AI-Rules 변경
 
-템플릿에 포함된 `/update-ai-rules` 워크플로우를 사용:
+## 주요 워크플로우 (Workflows)
+
+| 커맨드/문서 | 목적 | 관련 원칙 |
+|:---|:---|:---|
+| `/brainstorming` | 아이디어 발견 및 전략 토론 (문서/코드 금지) | Principle 8 |
+| `/add-roadmap` | 확정된 아이디어의 로드맵 반영 및 문서 자동화 | Principle 8 |
+| `/update-ai-rules` | AI-rules 변경 프로세스 수행 | Principle 1, 2, 3 |
+| `/manage-backlog-roadmap` | 프로젝트 로드맵 및 백로그 관리 | Principle 8 |
+| `/create-rfc` | 주요 기술적 의사결정 제안 | Principle 8 |
+| `/spec-first-implementation` | 상세 설계 우선 구현 절차 | Principle 7 |
+| `/db-migration-execution` | 안전한 DB 마이그레이션 실행 | Principle 10 |
+| `/mock-to-real-dev` | 단계적 개발(Mock-to-Real) 수행 | Principle 11 |
+| `doc-compliance.md` | 작업 완료 전 거버넌스 자가 점검 | All |
+| `manage-workflows.md` | 워크플로우 자체 생성 및 수정 | Principle 3, 5 |
+
+### AI-Rules 변경 예시:
 1. 변경 제안
 2. 페르소나 검토 (3라운드)
 3. 회의록 작성
@@ -111,6 +129,6 @@ MIT License (템플릿을 자유롭게 사용하세요)
 
 ---
 
-**버전**: v1.1.0  
+**버전**: v1.9.0  
 **최종 업데이트**: 2026-01-17  
-**주요 변경**: Korean Language 원칙 및 CHANGELOG 이중 언어 전략 추가
+**주요 변경**: 아이디어 발견(/brainstorming) 및 로드맵 자동화(/add-roadmap) 도입

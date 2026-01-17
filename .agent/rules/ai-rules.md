@@ -30,14 +30,24 @@
 ### 7. Spec-First (설계 우선)
 - 구현 전 상세 명세(Specification) 작성 및 승인 필수
 
-### 8. Plan & Discuss (계획 및 논의)
-- `ROADMAP.md`를 통한 분기별 목표 관리
+### 84. **Plan & Discuss**: 모든 작업은 사전 논의와 로드맵 정렬이 필수임.
+   - `/brainstorming`: 논의 중 **문서/코드 생성 절대 금지**.
+   - `/add-roadmap`: 확정 시 로드맵 반영 및 **RFC 자동 생성**.
 - `docs/backlog/`를 통한 우선순위 기반 과업 관리
 - 큰 변경 시 `docs/rfc/` 제안 및 합의 필수
 
 ### 9. Git & Workflow (작업 흐름)
 - 문서(`docs/`)와 코드(`feat/`, `fix/`) 브랜치 엄격 분리
 - **즉시 머지 금지**: 모든 변경은 PR 및 명시적 승인 필수
+
+### 10. Database & Migration (데이터베이스)
+- 모든 DB 변경은 형상 관리(스크립트) 및 롤백 계획 필수
+- 상세 내용은 `ai-rules/tasks/database.md` 참조
+
+### 11. Mock-to-Real Development (개발 아웃라인)
+- 상용 중심의 인터페이스 우선 정의 및 수동 Mocking
+- Mock-to-Real 4단계 전환 프로세스 준수
+- 상세 내용은 `ai-rules/tasks/development.md` 참조
 
 ---
 
@@ -50,19 +60,18 @@
 ---
 
 ## AI 에이전트 행동 지침
-- 작업 시작 전 `ai-rules/index.md` 읽기
+- 작업 시작 전 `ai-rules/index.md` 및 **해당 단위 워크플로우**(`.agent/workflows/`) 읽기
 - 사용자 지시와 규칙 충돌 시 재확인 요청
 - `core_principles.md` 위배 여부 자가 점검
+- **완료 전 `doc-compliance.md` 워크플로우 수행**
 
 ---
 
 ## AI-Rules 변경 프로세스
 1. 제안 → 2. 페르소나 검토 (3라운드) → 3. 회의록 작성 → 4. 반영 → 5. 검증
-- **페르소나**: 10년차+ 개발자, 연구원, 아키텍트, PM
-- **회의록**: `ai-rules/meeting_minutes/YYYYMMDD_topic.md`
-- **이력**: `ai-rules/HISTORY.md` + `ai-rules/changes/`
-- **워크플로우**: `/update-ai-rules`
+- **페르소나**: 시니어 개발자, 연구원, 아키텍트, PM, **문서 전문가**
+- **워크플로우**: `/update-ai-rules`, `/manage-backlog-roadmap`, `/create-rfc` 등 모듈화된 지침 준수
 
 ---
 
-**최종 업데이트**: 2026-01-17 v1.4.0 (Git 전략 및 문서/코드 분리 추가)
+**최종 업데이트**: 2026-01-17 v1.9.0 (아이디어 발견 및 로드맵 자동화)

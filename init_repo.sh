@@ -48,21 +48,29 @@ fi
 
 # 6. Setup AI Rules sync (Copy-based, no symlinks)
 AGENT_RULES_DIR=".agent/rules"
-mkdir -p "$AGENT_RULES_DIR"
+AGENT_WORKFLOWS_DIR=".agent/workflows"
+mkdir -p "$AGENT_RULES_DIR" "$AGENT_WORKFLOWS_DIR"
 
-# Copy source index to target
+# Copy source index and workflows to target
 if [ -f "ai-rules/index.md" ]; then
   cp "ai-rules/index.md" "$AGENT_RULES_DIR/ai-rules.md"
   echo "Synced ai-rules/index.md to $AGENT_RULES_DIR/ai-rules.md"
+fi
+
+if [ -d "ai-rules/workflows" ]; then
+  cp ai-rules/workflows/*.md "$AGENT_WORKFLOWS_DIR/"
+  echo "Synced ai-rules/workflows/ to $AGENT_WORKFLOWS_DIR/"
 fi
 
 # Add pre-commit hook updates for sync
 HOOK_PATH=".git/hooks/pre-commit"
 cat <<'EOF' > $HOOK_PATH
 #!/bin/bash
-# Pre-commit hook to sync AI Rules and check changelog
+# Pre-commit hook to sync AI Rules/Workflows and check changelog
 AGENT_RULES_SRC="ai-rules/index.md"
 AGENT_RULES_DEST=".agent/rules/ai-rules.md"
+AGENT_WORKFLOWS_SRC_DIR="ai-rules/workflows"
+AGENT_WORKFLOWS_DEST_DIR=".agent/workflows"
 
 # 1. Sync AI rules if source changed
 if git diff --cached --name-only | grep -q "$AGENT_RULES_SRC"; then
@@ -72,7 +80,15 @@ if git diff --cached --name-only | grep -q "$AGENT_RULES_SRC"; then
   echo "Auto-synced $AGENT_RULES_DEST from $AGENT_RULES_SRC"
 fi
 
-# 2. Check CHANGELOG
+# 2. Sync Workflows if source changed
+if git diff --cached --name-only | grep -q "$AGENT_WORKFLOWS_SRC_DIR"; then
+  mkdir -p "$AGENT_WORKFLOWS_DEST_DIR"
+  cp "$AGENT_WORKFLOWS_SRC_DIR"/*.md "$AGENT_WORKFLOWS_DEST_DIR/"
+  git add "$AGENT_WORKFLOWS_DEST_DIR"/*.md
+  echo "Auto-synced $AGENT_WORKFLOWS_DEST_DIR from $AGENT_WORKFLOWS_SRC_DIR"
+fi
+
+# 3. Check CHANGELOG
 if git diff --cached --name-only | grep -q "CHANGELOG.md"; then
   : # Pass
 else

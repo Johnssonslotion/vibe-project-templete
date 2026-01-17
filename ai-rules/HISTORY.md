@@ -5,10 +5,112 @@
 
 ---
 
+## [v1.9.0] - 2026-01-17
+**변경 주체**: 전략적 아이디어 발견 및 로드맵 자동화  
+**승인자**: 사용자  
+**회의록**: [20260117_roadmap_v1.9.0.md](meeting_minutes/workflows/20260117_roadmap_v1.9.0.md)
+
+### 변경 내용
+- 프로젝트 발견 2단계 분리: `/brainstorming` (논의) → `/add-roadmap` (공식화/자동화)
+- 브레인스토밍 단계 내 **문서 생성 및 코드 작성 엄격 금지** 규칙 도입
+- 로드맵 확정 시 ROADMAP, Backlog, RFC 템플릿의 자동 생성(Scaffolding) 체계 구축
+
+### 상세 문서
+- [변경 상세: v1.9.0](changes/20260117_v1.9.0_roadmap_automation.md)
+
+---
+
+## [v1.8.1] - 2026-01-17
+**변경 주체**: 워크플로우 이중 위치 전략 (Dual-Location Sync)  
+**승인자**: 사용자  
+**회의록**: - (긴급 수정 반영)
+
+### 변경 내용
+- 워크플로우 동기화 자동화: `ai-rules/workflows/` (Source) -> `.agent/workflows/` (Deployment)
+- `init_repo.sh` 및 pre-commit 훅 내 동기화 로직 추가
+- `manage-workflows.md` 내 배포 지침 추가
+
+---
+
+## [v1.8.0] - 2026-01-17
+**변경 주체**: 워크플로우 거버넌스 및 README 통합  
+**승인자**: 사용자  
+**회의록**: [20260117_workflows_v1.8.0.md](meeting_minutes/workflows/20260117_workflows_v1.8.0.md)
+
+### 변경 내용
+- 워크플로우 위치 이동: `.agent/workflows/` -> `ai-rules/workflows/`
+- `README.md` 내 워크플로우 요약표 통합 및 버전 업데이트
+- 워크플로우 전용 히스토리 및 관리 워크플로우 도입
+
+### 상세 문서
+- [변경 상세: v1.8.0](changes/20260117_v1.8.0_workflows_update.md)
+
+---
+
+## [v1.7.0] - 2026-01-17
+**변경 주체**: 거버넌스 워크플로우 모듈화 및 문서 전문가 페르소나 도입  
+**승인자**: 사용자  
+**회의록**: [20260117_workflows_v1.7.0.md](meeting_minutes/workflows/20260117_workflows_v1.7.0.md)
+
+### 변경 내용
+- 신규 페르소나 도입: `Documentation Expert` (문서 전문가)
+- 거버넌스 단위별 워크플로우 모듈화 (`.agent/workflows/`)
+  - 로드맵/백로그, RFC, Spec-First, DB 마이그레이션, Mock-to-Real
+-| `/brainstorming` | 아이디어 발견 및 전략 토론 (문서/코드 금지) | Principle 8 |
+| `/add-roadmap` | 확정된 아이디어의 로드맵 반영 및 문서 자동화 | Principle 8 |
+| `/update-ai-rules` | AI-rules 변경 프로세스 수행 | Principle 1, 2, 3 |
+- `/update-ai-rules` 워크플로우 고도화
+
+### 상세 문서
+- [변경 상세: v1.7.0](changes/20260117_v1.7.0_workflows_update.md)
+
+---
+
+| 2026-01-17 | [workflows/](ai-rules/workflows/) | v1.2.0 | 브레인스토밍 및 로드맵 자동화 워크플로우 도입 | [v1.9.0](ai-rules/meeting_minutes/workflows/20260117_roadmap_v1.9.0.md) |
+| 2026-01-17 | [init_repo.sh](init_repo.sh) | v1.1.0 | 워크플로우 자동 동기화 로직 추가 | [v1.8.1](#v1.8.1---2026-01-17) |
+| 2026-01-17 | [README.md](README.md) | v1.8.0 | 워크플로우 가시성 강화 및 요약표 추가 | [v1.8.0](ai-rules/meeting_minutes/workflows/20260117_workflows_v1.8.0.md) |
+| 2026-01-17 | [brainstorming.md](brainstorming.md) | v1.0.0 | 아이디어 발견(논의 전용) 워크플로우 신설 | [v1.9.0](../../ai-rules/meeting_minutes/workflows/20260117_roadmap_v1.9.0.md) |
+| 2026-01-17 | [add-roadmap.md](add-roadmap.md) | v1.0.0 | 로드맵 확정 및 자동 문서화 워크플로우 신설 | [v1.9.0](../../ai-rules/meeting_minutes/workflows/20260117_roadmap_v1.9.0.md) |
+| 2026-01-17 | [update-ai-rules.md](update-ai-rules.md) | v1.1.0 | 문서 전문가 페르소나 도입 및 검토 단계 추가 | [v1.7.0](../../ai-rules/meeting_minutes/workflows/20260117_workflows_v1.7.0.md) |
+| 2026-01-17 | [ai-rules.md](.agent/rules/ai-rules.md) | v1.7.0 | 워크플로우 모듈화 및 문서 전문가 페르소나 추가 | [v1.7.0](ai-rules/meeting_minutes/workflows/20260117_workflows_v1.7.0.md) |
+| 2026-01-17 | [workflows/](ai-rules/workflows/) | v1.0.0 | 단위별 거버넌스 워크플로우 5종 신설 | [v1.7.0](ai-rules/meeting_minutes/workflows/20260117_workflows_v1.7.0.md) |
+| 2026-01-17 | [personas.md](ai-rules/personas.md) | v1.1.0 | Documentation Expert 페르소나 추가 | [v1.7.0](ai-rules/meeting_minutes/workflows/20260117_workflows_v1.7.0.md) |
+| 2026-01-17 | [ai-rules.md](.agent/rules/ai-rules.md) | v1.6.0 | Mock-to-Real 개발 아웃라인 전략 추가 | [v1.6.0](ai-rules/meeting_minutes/workflows/20260117_dev_strategy_v1.6.0.md) |
+
+## [v1.6.0] - 2026-01-17
+**변경 주체**: 개발 아웃라인 전략 (Mock-to-Real)  
+**승인자**: 사용자  
+**회의록**: [20260117_dev_strategy_v1.6.0.md](meeting_minutes/workflows/20260117_dev_strategy_v1.6.0.md)
+
+### 변경 내용
+- Mock-First to Real-Flow 개발 아웃라인 수립
+- 수동 Mocking 및 Failure 관리 가이드라인 (ai-rules/tasks/development.md)
+- Interface-Driven Development 원칙 도입
+
+### 상세 문서
+- [변경 상세: v1.6.0](changes/20260117_v1.6.0_dev_strategy_update.md)
+
+---
+
+## [v1.5.0] - 2026-01-17
+**변경 주체**: 프로젝트 마스터 히스토리 및 DB 마이그레이션 전략  
+**승인자**: 사용자  
+**회의록**: [20260117_governance_v1.5.0.md](meeting_minutes/rules/20260117_governance_v1.5.0.md)
+
+### 변경 내용
+- 프로젝트 마스터 히스토리 도입 (`docs/HISTORY.md`)
+- DB 마이그레이션 중립 원칙 및 형상 관리 가이드라인 수립
+- 문서 준수 워크플로우(Documentation Compliance) 도입
+
+### 상세 문서
+- [변경 상세: v1.5.0](changes/20260117_v1.5.0_governance_update.md)
+
+---
+
 ## [v1.4.0] - 2026-01-17
 **변경 주체**: Git 전략 강화 및 문서/코드 분리  
 **승인자**: 사용자  
-**회의록**: [20260117_git_strategy_v1.4.0.md](meeting_minutes/20260117_git_strategy_v1.4.0.md)
+**회의록**: [20260117_git_strategy_v1.4.0.md](meeting_minutes/rules/20260117_git_strategy_v1.4.0.md)
 
 ### 변경 내용
 - Git 브랜치 전략 수립 (문서 `docs/` vs 코드 `feat/` 등 격리)
@@ -23,7 +125,7 @@
 ## [v1.3.0] - 2026-01-17
 **변경 주체**: 관리 전략 고도화 (Backlog, Roadmap, RFC)  
 **승인자**: 사용자  
-**회의록**: [20260117_management_v1.3.0.md](meeting_minutes/20260117_management_v1.3.0.md)
+**회의록**: [20260117_management_v1.3.0.md](meeting_minutes/rules/20260117_management_v1.3.0.md)
 
 ### 변경 내용
 - 프로젝트 로드맵 운영 원칙 수립 (`ROADMAP.md`)
@@ -38,7 +140,7 @@
 ## [v1.2.0] - 2026-01-17
 **변경 주체**: 거버넌스 고도화 제안 (환경변수, 컨테이너, Spec-First)  
 **승인자**: 사용자  
-**회의록**: [20260117_governance_v1.2.0.md](meeting_minutes/20260117_governance_v1.2.0.md)
+**회의록**: [20260117_governance_v1.2.0.md](meeting_minutes/rules/20260117_governance_v1.2.0.md)
 
 ### 변경 내용
 - 환경변수 관리 원칙 수립 (`.env.example` 필수화, 시크릿 보안 강화)
@@ -53,7 +155,7 @@
 ## [v1.1.0] - 2026-01-17
 **변경 주체**: AI-Rules 페르소나 검토 프로세스  
 **승인자**: 사용자  
-**회의록**: [20260117_korean_language.md](meeting_minutes/20260117_korean_language.md)
+**회의록**: [20260117_korean_language.md](meeting_minutes/rules/20260117_korean_language.md)
 
 ### 변경 내용
 - Korean Language (한글 기본) 원칙 추가
@@ -69,7 +171,7 @@
 ## [v1.0.0] - 2026-01-17
 **변경 주체**: 프로젝트 초기 설정  
 **승인자**: 사용자  
-**회의록**: [20260117_initial_setup.md](../docs/meeting_minutes/20260117_initial_setup.md)
+**회의록**: [20260117_initial_setup.md](../docs/meeting_minutes/general/20260117_initial_setup.md)
 
 ### 변경 내용
 - AI Rules 관리 구조 수립 (`index.md`, `core_principles.md`)
