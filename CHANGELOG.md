@@ -7,6 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## Unreleased
 
 ### Changed
+- [AI-Rules v1.7.0] Modularized Governance Workflows and introduced Documentation Expert persona ([AI-규칙 v1.7.0] 거버넌스 워크플로우 모듈화 및 문서 전문가 페르소나 도입)
+  - Split governance processes into 5 independent workflows in `.agent/workflows/` ([거버넌스 프로세스를 5종의 독립된 워크플로우로 분리])
+  - Added `Documentation Expert` persona for high-quality knowledge management ([고품질 지식 관리를 위한 '문서 전문가' 페르소나 추가])
+  - Updated `/update-ai-rules` to reflect new review standards ([새로운 검토 표준을 반영한 /update-ai-rules 고도화])
+  - Meeting: [20260117_workflows_v1.7.0.md](ai-rules/meeting_minutes/20260117_workflows_v1.7.0.md)
 - [AI-Rules v1.6.0] Introduced Mock-to-Real Development Strategy ([AI-규칙 v1.6.0] Mock-to-Real 개발 전략 도입)
   - 4-phase development outline: Interface modeling, Manual Mocking, Real-flow transition, Production verification ([4단계 개발 아웃라인: 인터페이스 모델링, 수동 Mocking, 실제 연동, 상용 검증])
   - Manual Mocking management with failure/error injection ([수동 Mocking 관리 및 실패/에러 인젝션 지침])

@@ -21,6 +21,7 @@ description: AI Rules 변경 워크플로우 (페르소나 검토 포함)
 - Research Lead (연구 리드)
 - System Architect (시스템 아키텍트)
 - Project Manager (프로젝트 매니저)
+- **Documentation Expert** (문서 전문가)
 
 **프로세스**:
 1. **라운드 1**: 각 페르소나가 독립적으로 의견 제시 (찬성/반대/조건부 찬성)

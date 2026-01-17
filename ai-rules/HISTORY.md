@@ -5,6 +5,29 @@
 
 ---
 
+## [v1.7.0] - 2026-01-17
+**변경 주체**: 거버넌스 워크플로우 모듈화 및 문서 전문가 페르소나 도입  
+**승인자**: 사용자  
+**회의록**: [20260117_workflows_v1.7.0.md](meeting_minutes/20260117_workflows_v1.7.0.md)
+
+### 변경 내용
+- 신규 페르소나 도입: `Documentation Expert` (문서 전문가)
+- 거버넌스 단위별 워크플로우 모듈화 (`.agent/workflows/`)
+  - 로드맵/백로그, RFC, Spec-First, DB 마이그레이션, Mock-to-Real
+- `/update-ai-rules` 워크플로우 고도화
+
+### 상세 문서
+- [변경 상세: v1.7.0](changes/20260117_v1.7.0_workflows_update.md)
+
+---
+
+| 날짜 | 문서명 | 버전 | 변경 요약 | 관련 링크 |
+|:---|:---|:---|:---|:---|
+| 2026-01-17 | [ai-rules.md](.agent/rules/ai-rules.md) | v1.7.0 | 워크플로우 모듈화 및 문서 전문가 페르소나 추가 | [v1.7.0](ai-rules/meeting_minutes/20260117_workflows_v1.7.0.md) |
+| 2026-01-17 | [workflows/](.agent/workflows/) | v1.0.0 | 단위별 거버넌스 워크플로우 5종 신설 | [v1.7.0](ai-rules/meeting_minutes/20260117_workflows_v1.7.0.md) |
+| 2026-01-17 | [personas.md](ai-rules/personas.md) | v1.1.0 | Documentation Expert 페르소나 추가 | [v1.7.0](ai-rules/meeting_minutes/20260117_workflows_v1.7.0.md) |
+| 2026-01-17 | [ai-rules.md](.agent/rules/ai-rules.md) | v1.6.0 | Mock-to-Real 개발 아웃라인 전략 추가 | [v1.6.0](ai-rules/meeting_minutes/20260117_dev_strategy_v1.6.0.md) |
+
 ## [v1.6.0] - 2026-01-17
 **변경 주체**: 개발 아웃라인 전략 (Mock-to-Real)  
 **승인자**: 사용자  

@@ -59,7 +59,7 @@
 ---
 
 ## AI 에이전트 행동 지침
-- 작업 시작 전 `ai-rules/index.md` 읽기
+- 작업 시작 전 `ai-rules/index.md` 및 **해당 단위 워크플로우**(`.agent/workflows/`) 읽기
 - 사용자 지시와 규칙 충돌 시 재확인 요청
 - `core_principles.md` 위배 여부 자가 점검
 - **완료 전 `doc-compliance.md` 워크플로우 수행**
@@ -68,11 +68,9 @@
 
 ## AI-Rules 변경 프로세스
 1. 제안 → 2. 페르소나 검토 (3라운드) → 3. 회의록 작성 → 4. 반영 → 5. 검증
-- **페르소나**: 10년차+ 개발자, 연구원, 아키텍트, PM
-- **회의록**: `ai-rules/meeting_minutes/YYYYMMDD_topic.md`
-- **이력**: `ai-rules/HISTORY.md` + `ai-rules/changes/`
-- **워크플로우**: `/update-ai-rules`
+- **페르소나**: 시니어 개발자, 연구원, 아키텍트, PM, **문서 전문가**
+- **워크플로우**: `/update-ai-rules`, `/manage-backlog-roadmap`, `/create-rfc` 등 모듈화된 지침 준수
 
 ---
 
-**최종 업데이트**: 2026-01-17 v1.6.0 (Mock-to-Real 개발 전략 추가)
+**최종 업데이트**: 2026-01-17 v1.7.0 (워크플로우 모듈화 및 문서 전문가 추가)
