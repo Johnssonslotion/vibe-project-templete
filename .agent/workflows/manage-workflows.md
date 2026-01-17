@@ -25,7 +25,11 @@
 - **Documentation Expert**: 구조화, 가독성, 용어 표준화 검토 (필수).
 - **Senior Software Engineer**: 실행 가능성 및 자동화(turbo) 가능 여부 검토.
 
-### 4단계: 히스토리 및 인덱스 업데이트
+### 4단계: 동기화(Sync) 및 배포
+- `ai-rules/workflows/` 하위의 모든 변경 사항은 **`.agent/workflows/`로 즉시 복사**되어야 함.
+- 이는 `init_repo.sh` 및 pre-commit 훅을 통해 자동화되지만, AI 에이전트의 즉각적인 인식을 위해 수동 복사(`cp`)를 권장.
+
+### 5단계: 히스토리 및 인덱스 업데이트
 - `ai-rules/workflows/HISTORY.md` 기록.
 - `README.md`의 워크플로우 요약표 업데이트.
 - `docs/HISTORY.md` (마스터 히스토리) 반영.

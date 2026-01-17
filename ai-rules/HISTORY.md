@@ -5,6 +5,21 @@
 
 ---
 
+## [v1.9.0] - 2026-01-17
+**변경 주체**: 전략적 아이디어 발견 및 로드맵 자동화  
+**승인자**: 사용자  
+**회의록**: [20260117_roadmap_v1.9.0.md](meeting_minutes/workflows/20260117_roadmap_v1.9.0.md)
+
+### 변경 내용
+- 프로젝트 발견 2단계 분리: `/brainstorming` (논의) → `/add-roadmap` (공식화/자동화)
+- 브레인스토밍 단계 내 **문서 생성 및 코드 작성 엄격 금지** 규칙 도입
+- 로드맵 확정 시 ROADMAP, Backlog, RFC 템플릿의 자동 생성(Scaffolding) 체계 구축
+
+### 상세 문서
+- [변경 상세: v1.9.0](changes/20260117_v1.9.0_roadmap_automation.md)
+
+---
+
 ## [v1.8.1] - 2026-01-17
 **변경 주체**: 워크플로우 이중 위치 전략 (Dual-Location Sync)  
 **승인자**: 사용자  
@@ -41,6 +56,9 @@
 - 신규 페르소나 도입: `Documentation Expert` (문서 전문가)
 - 거버넌스 단위별 워크플로우 모듈화 (`.agent/workflows/`)
   - 로드맵/백로그, RFC, Spec-First, DB 마이그레이션, Mock-to-Real
+-| `/brainstorming` | 아이디어 발견 및 전략 토론 (문서/코드 금지) | Principle 8 |
+| `/add-roadmap` | 확정된 아이디어의 로드맵 반영 및 문서 자동화 | Principle 8 |
+| `/update-ai-rules` | AI-rules 변경 프로세스 수행 | Principle 1, 2, 3 |
 - `/update-ai-rules` 워크플로우 고도화
 
 ### 상세 문서
@@ -48,11 +66,12 @@
 
 ---
 
-| 날짜 | 문서명 | 버전 | 변경 요약 | 관련 링크 |
-|:---|:---|:---|:---|:---|
+| 2026-01-17 | [workflows/](ai-rules/workflows/) | v1.2.0 | 브레인스토밍 및 로드맵 자동화 워크플로우 도입 | [v1.9.0](ai-rules/meeting_minutes/workflows/20260117_roadmap_v1.9.0.md) |
 | 2026-01-17 | [init_repo.sh](init_repo.sh) | v1.1.0 | 워크플로우 자동 동기화 로직 추가 | [v1.8.1](#v1.8.1---2026-01-17) |
 | 2026-01-17 | [README.md](README.md) | v1.8.0 | 워크플로우 가시성 강화 및 요약표 추가 | [v1.8.0](ai-rules/meeting_minutes/workflows/20260117_workflows_v1.8.0.md) |
-| 2026-01-17 | [workflows/](ai-rules/workflows/) | v1.1.0 | 워크플로우 위치 이동 및 거버넌스 체계 구축 | [v1.8.0](ai-rules/meeting_minutes/workflows/20260117_workflows_v1.8.0.md) |
+| 2026-01-17 | [brainstorming.md](brainstorming.md) | v1.0.0 | 아이디어 발견(논의 전용) 워크플로우 신설 | [v1.9.0](../../ai-rules/meeting_minutes/workflows/20260117_roadmap_v1.9.0.md) |
+| 2026-01-17 | [add-roadmap.md](add-roadmap.md) | v1.0.0 | 로드맵 확정 및 자동 문서화 워크플로우 신설 | [v1.9.0](../../ai-rules/meeting_minutes/workflows/20260117_roadmap_v1.9.0.md) |
+| 2026-01-17 | [update-ai-rules.md](update-ai-rules.md) | v1.1.0 | 문서 전문가 페르소나 도입 및 검토 단계 추가 | [v1.7.0](../../ai-rules/meeting_minutes/workflows/20260117_workflows_v1.7.0.md) |
 | 2026-01-17 | [ai-rules.md](.agent/rules/ai-rules.md) | v1.7.0 | 워크플로우 모듈화 및 문서 전문가 페르소나 추가 | [v1.7.0](ai-rules/meeting_minutes/workflows/20260117_workflows_v1.7.0.md) |
 | 2026-01-17 | [workflows/](ai-rules/workflows/) | v1.0.0 | 단위별 거버넌스 워크플로우 5종 신설 | [v1.7.0](ai-rules/meeting_minutes/workflows/20260117_workflows_v1.7.0.md) |
 | 2026-01-17 | [personas.md](ai-rules/personas.md) | v1.1.0 | Documentation Expert 페르소나 추가 | [v1.7.0](ai-rules/meeting_minutes/workflows/20260117_workflows_v1.7.0.md) |

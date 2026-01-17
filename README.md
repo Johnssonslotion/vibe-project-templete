@@ -83,6 +83,8 @@ cat ai-rules/core_principles.md
 
 | 커맨드/문서 | 목적 | 관련 원칙 |
 |:---|:---|:---|
+| `/brainstorming` | 아이디어 발견 및 전략 토론 (문서/코드 금지) | Principle 8 |
+| `/add-roadmap` | 확정된 아이디어의 로드맵 반영 및 문서 자동화 | Principle 8 |
 | `/update-ai-rules` | AI-rules 변경 프로세스 수행 | Principle 1, 2, 3 |
 | `/manage-backlog-roadmap` | 프로젝트 로드맵 및 백로그 관리 | Principle 8 |
 | `/create-rfc` | 주요 기술적 의사결정 제안 | Principle 8 |
@@ -127,6 +129,6 @@ MIT License (템플릿을 자유롭게 사용하세요)
 
 ---
 
-**버전**: v1.8.0  
+**버전**: v1.9.0  
 **최종 업데이트**: 2026-01-17  
-**주요 변경**: 워크플로우 거버넌스 강화, README 통합, 문서 전문가 페르소나 합류
+**주요 변경**: 아이디어 발견(/brainstorming) 및 로드맵 자동화(/add-roadmap) 도입
