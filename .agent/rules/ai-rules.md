@@ -39,6 +39,10 @@
 - 문서(`docs/`)와 코드(`feat/`, `fix/`) 브랜치 엄격 분리
 - **즉시 머지 금지**: 모든 변경은 PR 및 명시적 승인 필수
 
+### 10. Database & Migration (데이터베이스)
+- 모든 DB 변경은 형상 관리(스크립트) 및 롤백 계획 필수
+- 상세 내용은 `ai-rules/tasks/database.md` 참조
+
 ---
 
 ## 규칙 우선순위
@@ -53,6 +57,7 @@
 - 작업 시작 전 `ai-rules/index.md` 읽기
 - 사용자 지시와 규칙 충돌 시 재확인 요청
 - `core_principles.md` 위배 여부 자가 점검
+- **완료 전 `doc-compliance.md` 워크플로우 수행**
 
 ---
 
@@ -65,4 +70,4 @@
 
 ---
 
-**최종 업데이트**: 2026-01-17 v1.4.0 (Git 전략 및 문서/코드 분리 추가)
+**최종 업데이트**: 2026-01-17 v1.5.0 (Docs History, DB Migration, Compliance 추가)

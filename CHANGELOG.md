@@ -7,6 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## Unreleased
 
 ### Changed
+- [AI-Rules v1.5.0] Introduced Master History, DB Migration Strategy, and Doc Compliance Workflow ([AI-규칙 v1.5.0] 마스터 히스토리, DB 마이그레이션 전략, 문서 준수 워크플로우 도입)
+  - Master document history for all project assets in `docs/HISTORY.md` ([모든 자산의 변경 이력을 통합하는 docs/HISTORY.md 도입])
+  - Tool-neutral DB Migration principles following strict VC rules ([형상 관리 원칙을 따르는 도구 중립적 DB 마이그레이션 원칙 수립])
+  - Documentation Compliance workflow for AI self-audit ([AI 자가 점검을 위한 문서 준수 워크플로우 도입])
+  - Meeting: [20260117_governance_v1.5.0.md](ai-rules/meeting_minutes/20260117_governance_v1.5.0.md)
 - [AI-Rules v1.4.0] Strengthened Git strategy with Doc/Code separation and no-immediate-merge policy ([AI-규칙 v1.4.0] 문서/코드 분리 및 즉시 머지 금지 정책을 통한 Git 전략 강화)
   - Strict branch naming: `docs/`, `feat/`, `fix/`, `research/` ([브랜치 네이밍 강제: docs, feat, fix, research])
   - Immediate merge prohibited; PR and explicit approval required ([즉시 머지 금지; PR 및 명시적 승인 필수])
