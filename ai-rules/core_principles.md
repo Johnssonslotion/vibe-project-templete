@@ -51,3 +51,8 @@
 - **도구 중립적 형상 관리**: 모든 DB 변경은 순차적 마이그레이션 스크립트를 통해 수행하며, 코드와 함께 버전 관리한다.
 - **가역성 보장**: 모든 변경은 롤백(`Down`) 계획을 포함해야 하며, 스테이징 환경에서의 검증이 선행되어야 한다.
 - 상세 규칙은 `ai-rules/tasks/database.md`를 따른다.
+
+## 11. Mock-to-Real Development (개발 아웃라인)
+- **Interface-Driven**: 상용 수준의 견고함을 위해 모든 통신은 인터페이스 우선 정의와 수동 Mocking으로 시작한다.
+- **Phase-based Evolution**: Mock-First에서 Real-Flow로 전환하는 4단계 아웃라인을 준수하며, 각 단계별 실패(Failure) 시나리오 검증을 필수화한다.
+- 상세 규칙은 `ai-rules/tasks/development.md`를 따른다.

@@ -5,6 +5,21 @@
 
 ---
 
+## [v1.6.0] - 2026-01-17
+**변경 주체**: 개발 아웃라인 전략 (Mock-to-Real)  
+**승인자**: 사용자  
+**회의록**: [20260117_dev_strategy_v1.6.0.md](meeting_minutes/20260117_dev_strategy_v1.6.0.md)
+
+### 변경 내용
+- Mock-First to Real-Flow 개발 아웃라인 수립
+- 수동 Mocking 및 Failure 관리 가이드라인 (ai-rules/tasks/development.md)
+- Interface-Driven Development 원칙 도입
+
+### 상세 문서
+- [변경 상세: v1.6.0](changes/20260117_v1.6.0_dev_strategy_update.md)
+
+---
+
 ## [v1.5.0] - 2026-01-17
 **변경 주체**: 프로젝트 마스터 히스토리 및 DB 마이그레이션 전략  
 **승인자**: 사용자  

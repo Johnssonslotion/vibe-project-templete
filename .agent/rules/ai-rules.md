@@ -43,6 +43,11 @@
 - 모든 DB 변경은 형상 관리(스크립트) 및 롤백 계획 필수
 - 상세 내용은 `ai-rules/tasks/database.md` 참조
 
+### 11. Mock-to-Real Development (개발 아웃라인)
+- 상용 중심의 인터페이스 우선 정의 및 수동 Mocking
+- Mock-to-Real 4단계 전환 프로세스 준수
+- 상세 내용은 `ai-rules/tasks/development.md` 참조
+
 ---
 
 ## 규칙 우선순위
@@ -70,4 +75,4 @@
 
 ---
 
-**최종 업데이트**: 2026-01-17 v1.5.0 (Docs History, DB Migration, Compliance 추가)
+**최종 업데이트**: 2026-01-17 v1.6.0 (Mock-to-Real 개발 전략 추가)

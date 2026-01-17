@@ -8,6 +8,8 @@
 
 | 날짜 | 문서명 | 버전 | 변경 요약 | 관련 링크 |
 |:---|:---|:---|:---|:---|
+| 2026-01-17 | [ai-rules.md](.agent/rules/ai-rules.md) | v1.6.0 | Mock-to-Real 개발 아웃라인 전략 추가 | [v1.6.0](ai-rules/meeting_minutes/20260117_dev_strategy_v1.6.0.md) |
+| 2026-01-17 | [development.md](ai-rules/tasks/development.md) | v1.0.0 | Mock-to-Real 상세 가이드 수립 | [v1.6.0](ai-rules/meeting_minutes/20260117_dev_strategy_v1.6.0.md) |
 | 2026-01-17 | [ai-rules.md](.agent/rules/ai-rules.md) | v1.5.0 | 마스터 히스토리, DB 마이그레이션, 준수 워크플로우 추가 | [v1.5.0](ai-rules/meeting_minutes/20260117_governance_v1.5.0.md) |
 | 2026-01-17 | [HISTORY.md](docs/HISTORY.md) | v1.0.0 | 프로젝트 마스터 히스토리 초안 수립 | [v1.5.0](ai-rules/meeting_minutes/20260117_governance_v1.5.0.md) |
 | 2026-01-17 | [database.md](ai-rules/tasks/database.md) | v1.0.0 | DB 마이그레이션 중립 원칙 수립 | [v1.5.0](ai-rules/meeting_minutes/20260117_governance_v1.5.0.md) |

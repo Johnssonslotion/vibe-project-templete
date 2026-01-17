@@ -7,6 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## Unreleased
 
 ### Changed
+- [AI-Rules v1.6.0] Introduced Mock-to-Real Development Strategy ([AI-규칙 v1.6.0] Mock-to-Real 개발 전략 도입)
+  - 4-phase development outline: Interface modeling, Manual Mocking, Real-flow transition, Production verification ([4단계 개발 아웃라인: 인터페이스 모델링, 수동 Mocking, 실제 연동, 상용 검증])
+  - Manual Mocking management with failure/error injection ([수동 Mocking 관리 및 실패/에러 인젝션 지침])
+  - Detailed development task rules in `ai-rules/tasks/development.md` ([ai-rules/tasks/development.md의 상세 개발 규칙])
+  - Meeting: [20260117_dev_strategy_v1.6.0.md](ai-rules/meeting_minutes/20260117_dev_strategy_v1.6.0.md)
 - [AI-Rules v1.5.0] Introduced Master History, DB Migration Strategy, and Doc Compliance Workflow ([AI-규칙 v1.5.0] 마스터 히스토리, DB 마이그레이션 전략, 문서 준수 워크플로우 도입)
   - Master document history for all project assets in `docs/HISTORY.md` ([모든 자산의 변경 이력을 통합하는 docs/HISTORY.md 도입])
   - Tool-neutral DB Migration principles following strict VC rules ([형상 관리 원칙을 따르는 도구 중립적 DB 마이그레이션 원칙 수립])
