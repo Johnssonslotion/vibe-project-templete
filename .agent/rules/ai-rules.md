@@ -21,12 +21,14 @@
 ### 4. Stability & Quality (안정성)
 - `main`/`develop` 브랜치는 항상 테스트 통과 상태 유지
 
-### 5. Korean Language (한글 기본)
-- **모든 문서는 한글 작성** (회의록, README, 설계 문서, 코드 주석)
-- **CHANGELOG 예외**: 영어 메인 + 한글 병기
-  - 형식: `- [Feature] Add component ([기능] 컴포넌트 추가)`
-  - LLM 토큰 효율을 위해 영어 우선 배치
 - **예외**: 오픈소스 기여, 인프라 코드, 학술 출판물, 국제 협업
+
+### 6. Env & Isolation (격리 및 환경)
+- `.env.example` 필수, 외부 변수 문서화
+- Docker/DevContainers 기반 환경 격리
+
+### 7. Spec-First (설계 우선)
+- 구현 전 상세 명세(Specification) 작성 및 승인 필수
 
 ---
 
