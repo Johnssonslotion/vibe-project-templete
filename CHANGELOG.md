@@ -7,6 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## Unreleased
 
 ### Changed
+- [AI-Rules v1.4.0] Strengthened Git strategy with Doc/Code separation and no-immediate-merge policy ([AI-규칙 v1.4.0] 문서/코드 분리 및 즉시 머지 금지 정책을 통한 Git 전략 강화)
+  - Strict branch naming: `docs/`, `feat/`, `fix/`, `research/` ([브랜치 네이밍 강제: docs, feat, fix, research])
+  - Immediate merge prohibited; PR and explicit approval required ([즉시 머지 금지; PR 및 명시적 승인 필수])
+  - Document Evolution Strategy defined as a separate backlog ticket ([문서 발전 전략을 독립된 백로그 티켓으로 정의])
+  - Meeting: [20260117_git_strategy_v1.4.0.md](ai-rules/meeting_minutes/20260117_git_strategy_v1.4.0.md)
 - [AI-Rules v1.3.0] Introduced Backlog, Roadmap, and RFC management strategies ([AI-규칙 v1.3.0] 백로그, 로드맵, RFC 관리 전략 도입)
   - Established `ROADMAP.md` for project milestones ([ROADMAP.md를 통한 마일스톤 관리])
   - Added Backlog management in `docs/backlog/` ([docs/backlog/을 통한 태스크 관리])

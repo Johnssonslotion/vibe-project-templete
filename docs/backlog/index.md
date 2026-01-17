@@ -9,6 +9,7 @@
 | B1 | CI/CD 파이프라인 고도화 | P1 | To-do | Github Actions 설정 |
 | B2 | 태스크별 상세 가이드 작성 | P2 | To-do | development.md, research.md |
 | B3 | 다국어 지원 엔진 검토 | P3 | To-do | RFC 작성 대상 |
+| B4 | 문서 발전 전략 수립 | P1 | To-do | 독립된 과업으로 문서화 체계 고도화 |
 
 ## 우선순위 기준
 - **P0**: 즉시 해결이 필요한 치명적 이슈

@@ -42,3 +42,7 @@
 - **Roadmap**: 프로젝트의 비전과 마일스톤은 `ROADMAP.md`에서 관리하며 분기별로 업데이트한다.
 - **Backlog**: 과업 우선순위는 `docs/backlog/` 또는 이슈 도구를 통해 관리하며 "Impact vs Effort"를 기준으로 한다.
 - **RFC (Request for Comments)**: 아키텍처 변경, 데이터 스키마 수정, 신규 기술 도입 등 영향도가 큰 변경 전에는 `docs/rfc/`에 제안서를 작성하고 기술적 합의를 거쳐야 한다.
+
+## 9. Git & Workflow (작업 흐름)
+- **문서/코드 분리**: 기능 개발(`feat/`), 버그 수정(`fix/`), 연구(`research/`)와 문서 수정(`docs/`) 브랜치를 구분하여 운영한다.
+- **즉시 머지 금지**: 모든 변경 사항은 PR(Pull Request)을 통해 제출되어야 하며, 페르소나 또는 사용자의 승인(Review) 없이는 `main` 또는 `develop` 브랜치에 즉시 머지하지 않는다.
