@@ -5,6 +5,21 @@
 
 ---
 
+## [v1.3.0] - 2026-01-17
+**변경 주체**: 관리 전략 고도화 (Backlog, Roadmap, RFC)  
+**승인자**: 사용자  
+**회의록**: [20260117_management_v1.3.0.md](meeting_minutes/20260117_management_v1.3.0.md)
+
+### 변경 내용
+- 프로젝트 로드맵 운영 원칙 수립 (`ROADMAP.md`)
+- 백로그 관리 전략 정립 (`docs/backlog/` 및 이슈 관리)
+- RFC (Request for Comments) 프로세스 도입 (`docs/rfc/`)
+
+### 상세 문서
+- [변경 상세: v1.3.0](changes/20260117_v1.3.0_management_update.md)
+
+---
+
 ## [v1.2.0] - 2026-01-17
 **변경 주체**: 거버넌스 고도화 제안 (환경변수, 컨테이너, Spec-First)  
 **승인자**: 사용자  

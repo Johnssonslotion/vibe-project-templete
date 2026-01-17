@@ -30,6 +30,11 @@
 ### 7. Spec-First (설계 우선)
 - 구현 전 상세 명세(Specification) 작성 및 승인 필수
 
+### 8. Plan & Discuss (계획 및 논의)
+- `ROADMAP.md`를 통한 분기별 목표 관리
+- `docs/backlog/`를 통한 우선순위 기반 과업 관리
+- 큰 변경 시 `docs/rfc/` 제안 및 합의 필수
+
 ---
 
 ## 규칙 우선순위
@@ -56,4 +61,4 @@
 
 ---
 
-**최종 업데이트**: 2026-01-17 v1.1.0 (Korean Language 원칙 추가)
+**최종 업데이트**: 2026-01-17 v1.3.0 (Backlog, Roadmap, RFC 전략 추가)

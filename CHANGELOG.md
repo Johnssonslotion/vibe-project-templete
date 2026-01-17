@@ -7,6 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## Unreleased
 
 ### Changed
+- [AI-Rules v1.3.0] Introduced Backlog, Roadmap, and RFC management strategies ([AI-규칙 v1.3.0] 백로그, 로드맵, RFC 관리 전략 도입)
+  - Established `ROADMAP.md` for project milestones ([ROADMAP.md를 통한 마일스톤 관리])
+  - Added Backlog management in `docs/backlog/` ([docs/backlog/을 통한 태스크 관리])
+  - Introduced RFC process in `docs/rfc/` for major changes ([주요 변경 사항을 위한 RFC 프로세스 도입])
+  - Meeting: [20260117_management_v1.3.0.md](ai-rules/meeting_minutes/20260117_management_v1.3.0.md)
 - [AI-Rules v1.2.0] Enhanced governance with Env Var management, Container strategy, and Spec-First process ([AI-규칙 v1.2.0] 환경변수 관리, 컨테이너 전략, Spec-First 프로세스를 통한 거버넌스 고도화)
   - Mandatory `.env.example` and documentation ([.env.example 필수화 및 문서화])
   - Docker/DevContainers for project isolation ([Docker/DevContainers를 통한 프로젝트 격리])
